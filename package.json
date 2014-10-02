@@ -1,0 +1,19 @@
+{
+  "name": "uicatalog-app-iphonesimulator7.1",
+  "version": "1.0.0",
+  "description": "Apple's UICatalog app",
+  "main": "build/Release-iphonesimulator/UICatalog.app",
+  "scripts": {
+    "prepublish": "grunt default"
+  },
+  "keywords": [
+    "uicatalog",
+    "appium",
+    "test",
+    "app"
+  ],
+  "author": "Apple",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

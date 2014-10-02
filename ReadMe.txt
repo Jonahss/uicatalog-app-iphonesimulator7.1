@@ -1,3 +1,7 @@
+Build
+=====
+`grunt default`
+
 UICatalog: Creating and Customizing UIKit Controls
 ===========================================================================
 
