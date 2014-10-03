@@ -1,10 +1,14 @@
 {
   "name": "uicatalog-app-iphonesimulator7.1",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Apple's UICatalog app",
   "main": "UICatalog7.1.app.zip",
   "scripts": {
     "prepublish": "grunt default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonahss/uicatalog-app-iphonesimulator7.1.git"
   },
   "keywords": [
     "uicatalog",
