@@ -1,5 +1,2 @@
-build/UICatalog.build
-build/Release-iphonesimulator
-!build/Release-iphonesimulator/UICatalog.app
-
+build
 node_modules

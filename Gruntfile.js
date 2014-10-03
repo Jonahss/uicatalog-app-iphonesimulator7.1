@@ -2,6 +2,13 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    zip: {
+      app: {
+        src: ['build/Release-iphonesimulator/UICatalog.app/*'],
+        dest: 'UICatalog7.1.app.zip',
+        cwd: 'build/Release-iphonesimulator'
+      }
+    }
   });
 
   var MAX_BUFFER_SIZE = 524288;
@@ -45,7 +52,9 @@ module.exports = function(grunt) {
     });
   };
 
+  grunt.loadNpmTasks('grunt-zip');
+
   grunt.registerTask('build', 'build ios app', function(){ buildApp('.', 'iphonesimulator7.1', this.async()) } );
   grunt.registerTask('clean', 'cleaning', function(){ cleanApp('.', 'iphonesimulator7.1', this.async()) } );
-  grunt.registerTask('default', ['clean', 'build']);
+  grunt.registerTask('default', ['clean', 'build', 'zip']);
 }
